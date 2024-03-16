@@ -42,7 +42,6 @@ public class UserServiceImpl implements UserService {
   }
 
   @Override
-  @Transactional
   public UserOrder placeProductsOrder(String username, List<GroceryItemOrderDTO> groceryItemList)
       throws MyCustomException {
     List<GroceryItemInventory> itemInventories =
